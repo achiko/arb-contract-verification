@@ -1,7 +1,12 @@
 
 # Arb Contract Formal Verification
 
+
 This repository contains a formal verification model for a Solidity Arbitrage contract using Z3 SMT solver.
+
+## Repository Overview
+
+This project provides a minimal demonstration of how symbolic execution can be used to verify an arbitrage contract. The model defines token balances, allowances and profitability constraints in Python and leverages the Z3 solver to prove whether arbitrage is possible under generic conditions.
 
 ## Files
 
