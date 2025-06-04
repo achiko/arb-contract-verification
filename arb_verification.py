@@ -15,8 +15,9 @@ router2 = String('router2')
 
 # Amount and Balances
 amount = Int('amount')
-amountReceived1 = Int('amountReceived1')
-amountReceived2 = Int('amountReceived2')
+# Amounts returned from the two swaps
+amountReceived1 = Int('swap_amount1')
+amountReceived2 = Int('swap_amount2')
 
 # Gas Variables
 gasOnStart = Int('gasOnStart')
@@ -54,8 +55,6 @@ allowance2_ok = Or(
 
 # --- Swaps ---
 # Abstract swaps - we don't model actual pool math, just symbolic return amounts
-amountReceived1 = Int('swap_amount1')
-amountReceived2 = Int('swap_amount2')
 
 # --- Gas Handling ---
 gasConstraint = (gasSpent == gasOnStart - gasLeft)
