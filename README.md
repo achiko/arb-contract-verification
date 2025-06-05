@@ -3,6 +3,9 @@
 
 
 This repository contains a formal verification model for a Solidity Arbitrage contract using Z3 SMT solver.
+The `arb_verification.py` script is derived from the logic in the
+[`Arb.sol`](https://github.com/achiko/arbSmartcontracts/blob/main/contracts/Arb.sol)
+Solidity contract.
 
 ## Repository Overview
 
